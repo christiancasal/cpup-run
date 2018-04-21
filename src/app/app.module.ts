@@ -1,9 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { CoreModule } from './_modules/core.module';
 import { AppRoutingModule } from './app.routing';
+import { CoreModule } from 'app/_modules/core.module';
+
 import { PageNotFoundComponent } from './_pages/page-not-found/page-not-found.component';
 
 @NgModule({
@@ -13,6 +15,7 @@ import { PageNotFoundComponent } from './_pages/page-not-found/page-not-found.co
 	],
 	imports: [
 		BrowserModule,
+		HttpClientModule,
 		CoreModule,
 		AppRoutingModule
 	],
