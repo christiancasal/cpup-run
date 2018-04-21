@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 @NgModule({
 	imports: [
 		CommonModule,
-		RouterModule
+		RouterModule,
 	],
 	exports: [
 		CommonModule,
-		RouterModule
+		RouterModule,
 	],
 	declarations: [],
 	providers: [],

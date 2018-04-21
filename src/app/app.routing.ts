@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutMeComponent } from './about-me/about-me.component';
-import { BlogPostsComponent } from './blog-posts/blog-posts.component';
+import { PageNotFoundComponent } from 'app/_pages/page-not-found/page-not-found.component';
+import { PageModule } from './_pages/page.module';
 
 const routes: Routes = [
-	{ path: '', component: AboutMeComponent },
-	{ path: 'about', component: AboutMeComponent },
-	{ path: 'posts', component: BlogPostsComponent },
-	{ path: '**', redirectTo: 'posts' },
+	{ path: '', loadChildren: () => PageModule },
+	{ path: '**', redirectTo: 'not-found' },
+	{ path: 'not-found', component: PageNotFoundComponent },
 ];
 
 @NgModule({
