@@ -20,9 +20,13 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "styles/_colors.scss",
         "../node_modules/normalize.css/normalize.css"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "../styles"
+        ]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {

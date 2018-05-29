@@ -6,6 +6,7 @@
     align-items: center;
     max-width: 15rem;
     background-color: $darkShade;
-    color: $lightAccent;
+    color: $brand;
+    font-family: $mainFont;
     box-shadow: 0 2px 2px rgba(0,0,0, 0.25);
 }

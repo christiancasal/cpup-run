@@ -5,9 +5,22 @@ app-page {
 }
 
 app-sidebar {
-    flex: 1
+    flex: 1;
+    text-align: center;
+
+    :first-child {
+       margin-top: 40px; 
+    }
+
+    > a {
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
 }
 
 app-content {
-    flex: 1
+    flex: 1;
 }

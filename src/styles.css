@@ -4,3 +4,11 @@
 body {
     margin: unset;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: unset;
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { PageNotFoundComponent } from './_pages/page-not-found/page-not-found.co
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		HttpClientModule,
 		CoreModule,
 		AppRoutingModule

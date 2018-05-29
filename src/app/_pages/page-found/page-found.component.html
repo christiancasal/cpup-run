@@ -1,10 +1,10 @@
 <app-header></app-header>
 <app-page>
 	<app-sidebar>
-		<div routerLink="/about">About Me</div>
-		<div routerLink="/posts">Posts</div>
+		<a routerLink="/about">About Me</a>
+		<a routerLink="/posts">Posts</a>
 	</app-sidebar>
-	<app-content>
-		<router-outlet></router-outlet>
+	<app-content [@routerTransition]="getState(o)">
+		<router-outlet #o="outlet"></router-outlet>
 	</app-content>
 </app-page>

@@ -10,8 +10,8 @@ const routes: Routes = [
 		path: '',
 		component: PageFoundComponent,
 		children: [
-			{ path: 'about', component: AboutMeComponent },
-			{ path: 'posts', component: BlogPostsComponent }
+			{ path: 'about', component: AboutMeComponent, data: { state: 'about' } },
+			{ path: 'posts', component: BlogPostsComponent, data: { state: 'posts' } }
 		]
 	}
 ];
