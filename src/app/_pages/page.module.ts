@@ -16,13 +16,13 @@ import { PageComponent } from 'app/_components/page/page.component';
 		AboutMeModule,
 		BlogPostsModule,
 		PageRoutingModule,
+		SharedModule
 	],
 	exports: [],
 	declarations: [
 		PageFoundComponent,
 		HeaderComponent,
 		SidebarComponent,
-		ContentComponent,
 		PageComponent
 	],
 	providers: [],
