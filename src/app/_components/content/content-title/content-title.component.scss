@@ -1,0 +1,11 @@
+@import '~styles/themes/_selected';
+
+:host {
+    font-family: $titleFont;
+    font-size: 2rem;
+    flex: 1;
+}
+
+span {
+    border-bottom: 2px solid $brand;    
+}

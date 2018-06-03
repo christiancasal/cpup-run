@@ -1,0 +1,11 @@
+@import '~styles/themes/_selected';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+app-content-body {
+    flex: 1;
+}

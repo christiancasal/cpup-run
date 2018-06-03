@@ -12,3 +12,7 @@ a {
 a:visited {
     color: unset;
 }
+
+a:-webkit-any-link {
+    color: unset;
+}

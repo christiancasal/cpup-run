@@ -10,11 +10,13 @@ import { HeaderComponent } from 'app/_components/header/header.component';
 import { SidebarComponent } from 'app/_components/sidebar/sidebar.component';
 import { ContentComponent } from 'app/_components/content/content.component';
 import { PageComponent } from 'app/_components/page/page.component';
+import { ResumeModule } from 'app/resume/resume.module';
 
 @NgModule({
 	imports: [
 		AboutMeModule,
 		BlogPostsModule,
+		ResumeModule,
 		PageRoutingModule,
 		SharedModule
 	],

@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageFoundComponent } from './page-found/page-found.component';
 import { AboutMeComponent } from 'app/about-me/about-me.component';
 import { BlogPostsComponent } from 'app/blog-posts/blog-posts.component';
+import { ResumeComponent } from 'app/resume/resume.component';
 
 const routes: Routes = [
 	{
@@ -11,7 +12,8 @@ const routes: Routes = [
 		component: PageFoundComponent,
 		children: [
 			{ path: 'about', component: AboutMeComponent, data: { state: 'about' } },
-			{ path: 'posts', component: BlogPostsComponent, data: { state: 'posts' } }
+			{ path: 'posts', component: BlogPostsComponent, data: { state: 'posts' } },
+			{ path: 'resume', component: ResumeComponent, data: { state: 'resume' } },
 		]
 	}
 ];
