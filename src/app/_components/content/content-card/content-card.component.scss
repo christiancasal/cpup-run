@@ -1,0 +1,7 @@
+@import '~styles/themes/_selected';
+
+.card {
+    display: flex;
+    background-color: $lightShade;
+    padding: 1rem;
+}
