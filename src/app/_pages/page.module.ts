@@ -11,7 +11,6 @@ import { SidebarComponent } from 'app/_components/sidebar/sidebar.component';
 import { ContentComponent } from 'app/_components/content/content.component';
 import { PageComponent } from 'app/_components/page/page.component';
 import { ResumeModule } from 'app/resume/resume.module';
-import { CardComponent } from '../_components/card/card.component';
 
 @NgModule({
 	imports: [

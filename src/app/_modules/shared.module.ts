@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ContentModule } from 'app/_components/content/content.module';
-import { CardComponent } from '../_components/card/card.component';
+import { ContentCardComponent } from 'app/_components/content/content-card/content-card.component';
 
 @NgModule({
 	imports: [
