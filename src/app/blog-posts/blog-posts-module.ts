@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'app/_modules/shared.module';
 
-import { BlogPostsComponent } from './blog-posts.component';
+import { BlogPostsComponent } from 'app/blog-posts/blog-posts.component';
 
 @NgModule({
 	imports: [

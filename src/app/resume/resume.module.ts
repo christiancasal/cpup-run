@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'app/_modules/shared.module';
 
-import { ResumeComponent } from './resume.component';
+import { ResumeComponent } from 'app/resume/resume.component';
 
 @NgModule({
 	imports: [
