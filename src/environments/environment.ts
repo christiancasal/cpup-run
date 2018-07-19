@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+	production: false,
+	firebase: {
+		apiKey: process.env.FIREBASE_APIKEY,
+		authDomain: 'cpepper-run.firebaseapp.com',
+		databaseURL: 'https://cpepper-run.firebaseio.com',
+		projectId: 'cpepper-run',
+		storageBucket: '',
+		messagingSenderId: '947923577173'
+	}
 };

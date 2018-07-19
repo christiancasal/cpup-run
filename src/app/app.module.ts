@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app.routing';
-import { CoreModule } from 'app/_modules/core.module';
+import { environment } from 'environments/environment';
 
+import { CoreModule } from 'app/_modules/core.module';
+import { AppRoutingModule } from './app.routing';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './_pages/page-not-found/page-not-found.component';
 
 @NgModule({
@@ -16,6 +20,8 @@ import { PageNotFoundComponent } from './_pages/page-not-found/page-not-found.co
 	],
 	imports: [
 		BrowserModule,
+		AngularFireModule.initializeApp(environment.firebase),
+		AngularFirestoreModule,
 		BrowserAnimationsModule,
 		HttpClientModule,
 		CoreModule,
